@@ -189,85 +189,68 @@ a {
     opacity: 0;
 }
 
-.grow {
-  padding: 5px 5px 5px 5px;
-  border-radius: 10px;
-  height: 49px;
-  width: 22%;
-  margin: 5px 1% 5px 1%;
-  float: left;
-  position: relative;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  text-align: center;
-  overflow: hidden;
-}
-
-.grow:hover {
-  height: 145px;
-}
-
 .tabs {
-    width: 650px;
-    float: none;
-    list-style: none;
-    position: relative;
-    margin: 80px 0 0 10px;
-    text-align: left;
+  width: 90%;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+    font-family: roboto;
+    color: #fff;
 }
-
 .tabs li {
-    float: left;
-    display: block;
+  float: left;
+  display: block;
+    font-family: roboto;
+    color: #fff;
 }
-
 .tabs input[type="radio"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
-
 .tabs label {
-    display: block;
-    padding: 14px 21px;
-    border-radius: 2px 2px 0 0;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: uppercase /*Ehhh maybe not, check this out later me*/
-    background: #512da8;
-    cursor: pointer;
-    position: relative;
-    top: 4px;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+  display: block;
+  padding: 14px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #6B47C2;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+    font-family: roboto;
+    color: #fff;
 }
-
-.tabs label:hover{
-    background: #4e219e;
+.tabs label:hover {
+  background: #512da8;
 }
-
 .tabs .tab-content {
-    z-index: 2;
-    display: none;
-    overflow: hidden;
-    width: 100%;
-    font-size 17px; /*Ehh maybe modify this one, me */
-    line-height: 25px; /*Also look at this */
-    padding: 25px;
-    position: absolute;
-    top: 53px;
-    left: 0;
-    background: #512da8;
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #512da8;
+    font-family: roboto;
+    color: #fff;
 }
-
 .tabs [id^="tab"]:checked + label {
-    top: 0;
-    padding-top: 17px;
-    background: #512da8;
+  top: 0;
+  padding-top: 17px;
+  background: #512da8;
 }
-
-.tabs [id^="tab"]:checked ~ [id^"tab-content"] {
-    display: block;
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
 }
