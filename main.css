@@ -254,3 +254,7 @@ a {
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
 }
+
+.tabs {
+
+}
