@@ -243,3 +243,31 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
+.tabs label:hover{
+    background: #4e219e;
+}
+
+.tabs .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size 17px; /*Ehh maybe modify this one, me */
+    line-height: 25px; /*Also look at this */
+    padding: 25px;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background: #512da8;
+}
+
+.tabs [id^="tab"]:checked + label {
+    top: 0;
+    padding-top: 17px;
+    background: #512da8;
+}
+
+.tabs [id^="tab"]:checked ~ [id^"tab-content"] {
+    display: block;
+}
