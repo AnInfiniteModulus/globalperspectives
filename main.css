@@ -67,9 +67,11 @@ a {
 }
 
 .paragraph-container {
-    color: #000 !important; 
+    color: #FFF !important; 
     font-size: 25px !important; 
     margin: 0px 5vw 0px 5vw !important;
+    background-color: #9e9e9e;
+    padding: 1.5em;
 }
 
 .fadein {
@@ -254,4 +256,25 @@ a {
 }
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0px 0px 4em;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: 'Roboto'
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font: 'Roboto';
 }
